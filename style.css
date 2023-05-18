@@ -1,0 +1,275 @@
+/* Pagina Completa*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+*:focus { 
+    color: darkblue;
+}
+
+
+body {
+    background-color: rgb(175, 101, 243);
+}
+
+/* Barra de Navegación*/
+
+header {
+    background-color: blueviolet;
+    width: 100%;
+    height: 50px;
+}
+
+#header-left {
+    position: relative;
+    width: 49%;
+    height: 100%;
+    float: left;
+}
+
+#header-left h1 {
+    color:aliceblue;
+    position: relative;
+    font-size: 150%;
+    text-align: left;
+    padding: 10px 0 0 1%;
+}
+
+#header-right {
+    position: relative;
+    float: right;
+    width: 49%;
+    height: 100%;
+
+}
+
+nav a {
+    position: relative;
+    display: inline;
+    float: right;
+    color: aliceblue;
+    margin: 50% 1.5% auto 0;
+    padding-top: 14px;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    color: darkblue; 
+}
+
+nav a:active {
+    color: aliceblue;
+}
+
+/* Cabecera de la página */
+
+#principal {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#fotoFondo {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+#fondo {
+    position: absolute;
+    margin: 50px 20% 0 20%;
+    background: linear-gradient(250deg, blueviolet, rgb(201, 157, 243));
+    width: 60%;
+    height: 500px;
+    display: flex;
+}
+
+.fotarda {
+    position: relative;
+    text-align: right;
+    width: 50%;
+}
+
+@media (max-width: 1922px) {
+    .fotarda {
+        padding-top: 5%;
+        padding-left: 20px;
+    }
+
+    #descripcion {
+        padding-top: 170px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .fotarda {
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+
+    #descripcion {
+        padding-top: 100px;
+        min-width: 200px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1081px) {
+    .fotarda {
+        padding-top: 90px;
+        padding-left: 20px;
+    }
+
+    #descripcion {
+        padding-top: 60px;
+        min-width: 200px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 721px) {
+    .fotarda {
+        padding-top: 150px;
+        padding-left: 20px;
+    }
+
+    #descripcion {
+        min-width: 200px;
+        padding-top: 45px;
+        padding-left: 20px;
+    }
+}
+
+
+.fotarda img {
+    width: 100%;
+    max-width: 400px;
+}
+
+#descripcion {
+    width: 35%;
+    max-width: 400px;
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+#descripcion h2 {
+    font-weight: 900;
+    color: aliceblue;
+}
+
+#descripcion h3 {   
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0.5em;
+    overflow-x: auto;
+}
+
+/* Sección de Clips */
+
+#clips {
+    background: linear-gradient(rgb(86, 11, 156), rgb(175, 101, 243));
+    width: 100%;
+    padding-bottom: 0.5%;
+    padding-top: 10px;
+}
+
+#clips iframe {
+    width: 100%;
+    max-width: 500px;
+    min-width: 400px;
+    object-fit: cover;
+    height: 300px;
+    margin: 15px auto;
+}
+
+.filaClips {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5% 10%;
+    margin-top: 10px;
+}
+
+.filaClips::after {
+    content: "";
+    width: 100%;
+    max-width: 500px;
+}
+
+#redesTitulo {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.tituloClip h2 {
+    margin-top: 0.5%;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/* Separador*/
+
+#sepa {
+    height: 0px;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    border-top: 5px dashed rgb(67, 20, 110);
+}
+
+/* Sección de Redes */
+
+#redes {
+    width: 100%;
+    padding-bottom: 0.5%;
+    background: linear-gradient(rgb(175, 101, 243), rgb(67, 20, 110));
+}
+
+#redesTitulo {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+#redesFotos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1% 5%; 
+}
+
+#redesFotos figure {
+    align-items: center;
+}
+
+#redesFotos img {
+    margin: 0 auto 0 auto;
+    width: 20em;
+}
+
+#redes figcaption {
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
